@@ -118,6 +118,16 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://localhost:8000/",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://localhost:8000/",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
