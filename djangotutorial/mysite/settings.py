@@ -122,3 +122,6 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+NOCODB_BASE_URL = "https://app.nocodb.com/api/v2/"
+NOCODB_API_KEY = "4Dnqi88vzNUGuCzi_mnkLpWPzF3Ki5T2VW-muaQj"
