@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 
 # Загружаем данные
-URL = "http://localhost:8000/nocodb-data/"
+URL = "http://backend:8000/nocodb-data/"
 data = requests.get(URL).json()
 df = pd.DataFrame(data["records"])
 
