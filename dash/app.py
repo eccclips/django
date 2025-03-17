@@ -5,14 +5,27 @@ import requests
 
 # Загружаем данные
 URL = "http://backend:8000/nocodb-data/"
-data = requests.get(URL).json()
-df = pd.DataFrame(data["records"])
 
-df = df.dropna(subset=["monitoring_id"])  # Убираем пустые записи
+def get_data():
+    response = requests.get(URL)
+    if response.status_code != 200:
+        print(f"Ошибка запроса: {response.status_code}")
+        return pd.DataFrame()  # Возвращаем пустой DataFrame, если API недоступен
+    
+    try:
+        data = response.json()
+        records = data.get("records", [])  # Безопасно извлекаем записи
+        return pd.DataFrame(records)
+    except ValueError as e:
+        print(f"Ошибка парсинга JSON: {e}")
+        return pd.DataFrame()
 
-df["monitoring_time"] = pd.to_datetime(df["monitoring_time"])
+df = get_data()
 
-df = df.sort_values("monitoring_time", ascending=True)
+if not df.empty:
+    df = df.dropna(subset=["monitoring_id"])  # Убираем пустые записи
+    df["monitoring_time"] = pd.to_datetime(df["monitoring_time"])
+    df = df.sort_values("monitoring_time", ascending=True)
 
 app = dash.Dash(__name__)
 
@@ -35,8 +48,11 @@ app.layout = html.Div([
     Input("interval-component", "n_intervals")
 )
 def update_graphs(n):
-    data = requests.get(URL).json()
-    df = pd.DataFrame(data["records"])
+    df = get_data()
+
+    if df.empty:
+        return {"data": [], "layout": {"title": "Нет данных"}}, {"data": [], "layout": {"title": "Нет данных"}}
+
     df = df.dropna(subset=["monitoring_id"])  # Убираем пустые записи
     df["monitoring_time"] = pd.to_datetime(df["monitoring_time"])
     df = df.sort_values("monitoring_time", ascending=True)
@@ -64,4 +80,4 @@ def update_graphs(n):
     return cpu_fig, memory_fig
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True, host="0.0.0.0")
