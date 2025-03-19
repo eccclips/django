@@ -61,10 +61,15 @@ class Monitoring(models.Model):
 
 
 class Product(models.Model):
-       name = models.CharField(max_length=100)
-       price = models.DecimalField(max_digits=10, decimal_places=2)
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
 
-       def __str__(self):
-           return self.name
+    def __str__(self):
+        return self.name
       
- 
+    def __init__(self):
+        #: Doc comment for instance attribute qux.
+        self.qux = 3
+
+        self.spam = 4
+        """Docstring for instance attribute spam."""

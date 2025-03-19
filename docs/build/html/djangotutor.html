@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>djangotutor &#8212; документация djangotutor 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=ba58aea8"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=cd1d70c9"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="djangotutor documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-polls.models">
+<span id="djangotutor"></span><h1>djangotutor<a class="headerlink" href="#module-polls.models" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Choice">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Choice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choice_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">votes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Choice" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><em>BigAutoField</em></a>) – Primary key: ID</p></li>
+<li><p><strong>choice_text</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Choice text</p></li>
+<li><p><strong>votes</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.IntegerField" title="(в Django v5.1)"><em>IntegerField</em></a>) – Votes</p></li>
+</ul>
+</dd>
+</dl>
+<p>Relationship fields:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>question</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference internal" href="#polls.models.Question" title="polls.models.Question"><code class="xref py py-class docutils literal notranslate"><span class="pre">Question</span></code></a>) – Question (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">choice</span></code>)</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Choice.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.Choice.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Choice.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.Choice.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice._meta">
+<span class="sig-name descname"><span class="pre">_meta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Options</span> <span class="pre">for</span> <span class="pre">Choice&gt;</span></em><a class="headerlink" href="#polls.models.Choice._meta" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.choice_text">
+<span class="sig-name descname"><span class="pre">choice_text</span></span><a class="headerlink" href="#polls.models.Choice.choice_text" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Choice text</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#polls.models.Choice.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BigAutoField</span></code></a></p>
+<p>Primary key: ID</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.Choice.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.question">
+<span class="sig-name descname"><span class="pre">question</span></span><a class="headerlink" href="#polls.models.Choice.question" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference internal" href="#polls.models.Question" title="polls.models.Question"><code class="xref py py-class docutils literal notranslate"><span class="pre">Question</span></code></a></p>
+<p>Question (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">choice</span></code>)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.question_id">
+<span class="sig-name descname"><span class="pre">question_id</span></span><a class="headerlink" href="#polls.models.Choice.question_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal field, use <a class="reference internal" href="#polls.models.Choice.question" title="polls.models.Choice.question"><code class="xref py py-class docutils literal notranslate"><span class="pre">question</span></code></a> instead.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Choice.votes">
+<span class="sig-name descname"><span class="pre">votes</span></span><a class="headerlink" href="#polls.models.Choice.votes" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.IntegerField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegerField</span></code></a></p>
+<p>Votes</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Monitoring">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Monitoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">monitoring_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpu_usage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory_usage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">network_traffic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">virtual_machines</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Monitoring" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>monitoring_id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.UUIDField" title="(в Django v5.1)"><em>UUIDField</em></a>) – Primary key: Monitoring id</p></li>
+<li><p><strong>cpu_usage</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.FloatField" title="(в Django v5.1)"><em>FloatField</em></a>) – Cpu usage</p></li>
+<li><p><strong>memory_usage</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.FloatField" title="(в Django v5.1)"><em>FloatField</em></a>) – Memory usage</p></li>
+<li><p><strong>network_traffic</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.TimeField" title="(в Django v5.1)"><em>TimeField</em></a>) – Network traffic</p></li>
+<li><p><strong>monitoring_time</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(в Django v5.1)"><em>DateTimeField</em></a>) – Monitoring time</p></li>
+</ul>
+</dd>
+</dl>
+<p>Relationship fields:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>virtual_machines</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference internal" href="#polls.models.Virtuals" title="polls.models.Virtuals"><code class="xref py py-class docutils literal notranslate"><span class="pre">Virtuals</span></code></a>) – Virtual machines (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">monitoring</span></code>)</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Monitoring.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.Monitoring.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Monitoring.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.Monitoring.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring._meta">
+<span class="sig-name descname"><span class="pre">_meta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Options</span> <span class="pre">for</span> <span class="pre">Monitoring&gt;</span></em><a class="headerlink" href="#polls.models.Monitoring._meta" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.cpu_usage">
+<span class="sig-name descname"><span class="pre">cpu_usage</span></span><a class="headerlink" href="#polls.models.Monitoring.cpu_usage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.FloatField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FloatField</span></code></a></p>
+<p>Cpu usage</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Monitoring.get_next_by_monitoring_time">
+<span class="sig-name descname"><span class="pre">get_next_by_monitoring_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">monitoring_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Monitoring.get_next_by_monitoring_time" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds next instance based on <a class="reference internal" href="#polls.models.Monitoring.monitoring_time" title="polls.models.Monitoring.monitoring_time"><code class="xref py py-attr docutils literal notranslate"><span class="pre">monitoring_time</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_next_by_FOO" title="(в Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_next_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Monitoring.get_previous_by_monitoring_time">
+<span class="sig-name descname"><span class="pre">get_previous_by_monitoring_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">monitoring_time&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Monitoring.get_previous_by_monitoring_time" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds previous instance based on <a class="reference internal" href="#polls.models.Monitoring.monitoring_time" title="polls.models.Monitoring.monitoring_time"><code class="xref py py-attr docutils literal notranslate"><span class="pre">monitoring_time</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_previous_by_FOO" title="(в Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_previous_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.memory_usage">
+<span class="sig-name descname"><span class="pre">memory_usage</span></span><a class="headerlink" href="#polls.models.Monitoring.memory_usage" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.FloatField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FloatField</span></code></a></p>
+<p>Memory usage</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.monitoring_id">
+<span class="sig-name descname"><span class="pre">monitoring_id</span></span><a class="headerlink" href="#polls.models.Monitoring.monitoring_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.UUIDField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">UUIDField</span></code></a></p>
+<p>Primary key: Monitoring id</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.monitoring_time">
+<span class="sig-name descname"><span class="pre">monitoring_time</span></span><a class="headerlink" href="#polls.models.Monitoring.monitoring_time" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DateTimeField</span></code></a></p>
+<p>Monitoring time</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.network_traffic">
+<span class="sig-name descname"><span class="pre">network_traffic</span></span><a class="headerlink" href="#polls.models.Monitoring.network_traffic" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.TimeField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeField</span></code></a></p>
+<p>Network traffic</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.Monitoring.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.virtual_machines">
+<span class="sig-name descname"><span class="pre">virtual_machines</span></span><a class="headerlink" href="#polls.models.Monitoring.virtual_machines" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference internal" href="#polls.models.Virtuals" title="polls.models.Virtuals"><code class="xref py py-class docutils literal notranslate"><span class="pre">Virtuals</span></code></a></p>
+<p>Virtual machines (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">monitoring</span></code>)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Monitoring.virtual_machines_id">
+<span class="sig-name descname"><span class="pre">virtual_machines_id</span></span><a class="headerlink" href="#polls.models.Monitoring.virtual_machines_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal field, use <a class="reference internal" href="#polls.models.Monitoring.virtual_machines" title="polls.models.Monitoring.virtual_machines"><code class="xref py py-class docutils literal notranslate"><span class="pre">virtual_machines</span></code></a> instead.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Product">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Product" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><em>BigAutoField</em></a>) – Primary key: ID</p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Name</p></li>
+<li><p><strong>price</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DecimalField" title="(в Django v5.1)"><em>DecimalField</em></a>) – Price</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Product.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.Product.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Product.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.Product.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Product.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Product.__init__" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product._meta">
+<span class="sig-name descname"><span class="pre">_meta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Options</span> <span class="pre">for</span> <span class="pre">Product&gt;</span></em><a class="headerlink" href="#polls.models.Product._meta" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#polls.models.Product.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BigAutoField</span></code></a></p>
+<p>Primary key: ID</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#polls.models.Product.name" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Name</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.Product.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.price">
+<span class="sig-name descname"><span class="pre">price</span></span><a class="headerlink" href="#polls.models.Product.price" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DecimalField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DecimalField</span></code></a></p>
+<p>Price</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.qux">
+<span class="sig-name descname"><span class="pre">qux</span></span><a class="headerlink" href="#polls.models.Product.qux" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Doc comment for instance attribute qux.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Product.spam">
+<span class="sig-name descname"><span class="pre">spam</span></span><a class="headerlink" href="#polls.models.Product.spam" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Docstring for instance attribute spam.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Protocol">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Protocol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Protocol" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">TextChoices</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Protocol.RDP">
+<span class="sig-name descname"><span class="pre">RDP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rdp'</span></em><a class="headerlink" href="#polls.models.Protocol.RDP" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Protocol.SSH">
+<span class="sig-name descname"><span class="pre">SSH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ssh'</span></em><a class="headerlink" href="#polls.models.Protocol.SSH" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Protocol.VNC">
+<span class="sig-name descname"><span class="pre">VNC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'vnc'</span></em><a class="headerlink" href="#polls.models.Protocol.VNC" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Protocol._generate_next_value_">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_generate_next_value_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Protocol._generate_next_value_" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Generate the next value when not given.</p>
+<p>name: the name of the member
+start: the initial start value or None
+count: the number of existing members
+last_values: the list of values assigned</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Question">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Question</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">question_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pub_date</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Question" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><em>BigAutoField</em></a>) – Primary key: ID</p></li>
+<li><p><strong>question_text</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Question text</p></li>
+<li><p><strong>pub_date</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(в Django v5.1)"><em>DateTimeField</em></a>) – Date published</p></li>
+</ul>
+</dd>
+</dl>
+<p>Reverse relationships:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>choice</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="#polls.models.Choice" title="polls.models.Choice"><code class="xref py py-class docutils literal notranslate"><span class="pre">Choice</span></code></a>) – All choices of this question (related name of <a class="reference internal" href="#polls.models.Choice.question" title="polls.models.Choice.question"><code class="xref py py-attr docutils literal notranslate"><span class="pre">question</span></code></a>)</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Question.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.Question.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Question.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.Question.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question._meta">
+<span class="sig-name descname"><span class="pre">_meta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Options</span> <span class="pre">for</span> <span class="pre">Question&gt;</span></em><a class="headerlink" href="#polls.models.Question._meta" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question.choice_set">
+<span class="sig-name descname"><span class="pre">choice_set</span></span><a class="headerlink" href="#polls.models.Question.choice_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="#polls.models.Choice" title="polls.models.Choice"><code class="xref py py-class docutils literal notranslate"><span class="pre">Choice</span></code></a></p>
+<p>All choices of this question (related name of <a class="reference internal" href="#polls.models.Choice.question" title="polls.models.Choice.question"><code class="xref py py-attr docutils literal notranslate"><span class="pre">question</span></code></a>)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Question.get_next_by_pub_date">
+<span class="sig-name descname"><span class="pre">get_next_by_pub_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">pub_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Question.get_next_by_pub_date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds next instance based on <a class="reference internal" href="#polls.models.Question.pub_date" title="polls.models.Question.pub_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">pub_date</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_next_by_FOO" title="(в Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_next_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Question.get_previous_by_pub_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_pub_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.DateTimeField:</span> <span class="pre">pub_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Question.get_previous_by_pub_date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Finds previous instance based on <a class="reference internal" href="#polls.models.Question.pub_date" title="polls.models.Question.pub_date"><code class="xref py py-attr docutils literal notranslate"><span class="pre">pub_date</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_previous_by_FOO" title="(в Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_previous_by_FOO()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#polls.models.Question.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BigAutoField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BigAutoField</span></code></a></p>
+<p>Primary key: ID</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.Question.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question.pub_date">
+<span class="sig-name descname"><span class="pre">pub_date</span></span><a class="headerlink" href="#polls.models.Question.pub_date" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.DateTimeField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DateTimeField</span></code></a></p>
+<p>Date published</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Question.question_text">
+<span class="sig-name descname"><span class="pre">question_text</span></span><a class="headerlink" href="#polls.models.Question.question_text" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Question text</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Question.was_published_recently">
+<span class="sig-name descname"><span class="pre">was_published_recently</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Question.was_published_recently" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.models.Virtuals">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.models.</span></span><span class="sig-name descname"><span class="pre">Virtuals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">protocol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_vm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password_vm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_cert</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Virtuals" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.UUIDField" title="(в Django v5.1)"><em>UUIDField</em></a>) – Primary key: Id</p></li>
+<li><p><strong>hostname</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Hostname</p></li>
+<li><p><strong>protocol</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Protocol</p></li>
+<li><p><strong>address</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Address</p></li>
+<li><p><strong>port</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.IntegerField" title="(в Django v5.1)"><em>IntegerField</em></a>) – Port</p></li>
+<li><p><strong>user_vm</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – User vm</p></li>
+<li><p><strong>password_vm</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><em>CharField</em></a>) – Password vm</p></li>
+<li><p><strong>ignore_cert</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BooleanField" title="(в Django v5.1)"><em>BooleanField</em></a>) – Ignore cert</p></li>
+</ul>
+</dd>
+</dl>
+<p>Relationship fields:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/contrib/auth/#django.contrib.auth.models.User" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a>) – User id (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">virtuals</span></code>)</p>
+</dd>
+</dl>
+<p>Reverse relationships:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>monitoring</strong> (Reverse <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="#polls.models.Monitoring" title="polls.models.Monitoring"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitoring</span></code></a>) – All monitorings of this virtuals (related name of <a class="reference internal" href="#polls.models.Monitoring.virtual_machines" title="polls.models.Monitoring.virtual_machines"><code class="xref py py-attr docutils literal notranslate"><span class="pre">virtual_machines</span></code></a>)</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Virtuals.DoesNotExist">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#polls.models.Virtuals.DoesNotExist" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.ObjectDoesNotExist" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="polls.models.Virtuals.MultipleObjectsReturned">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#polls.models.Virtuals.MultipleObjectsReturned" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/exceptions/#django.core.exceptions.MultipleObjectsReturned" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals._meta">
+<span class="sig-name descname"><span class="pre">_meta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Options</span> <span class="pre">for</span> <span class="pre">Virtuals&gt;</span></em><a class="headerlink" href="#polls.models.Virtuals._meta" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.address">
+<span class="sig-name descname"><span class="pre">address</span></span><a class="headerlink" href="#polls.models.Virtuals.address" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Address</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.models.Virtuals.get_protocol_display">
+<span class="sig-name descname"><span class="pre">get_protocol_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.CharField:</span> <span class="pre">protocol&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.models.Virtuals.get_protocol_display" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Shows the label of the <a class="reference internal" href="#polls.models.Virtuals.protocol" title="polls.models.Virtuals.protocol"><code class="xref py py-attr docutils literal notranslate"><span class="pre">protocol</span></code></a>. See <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/instances/#django.db.models.Model.get_FOO_display" title="(в Django v5.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_FOO_display()</span></code></a> for more information.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.hostname">
+<span class="sig-name descname"><span class="pre">hostname</span></span><a class="headerlink" href="#polls.models.Virtuals.hostname" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Hostname</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#polls.models.Virtuals.id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.UUIDField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">UUIDField</span></code></a></p>
+<p>Primary key: Id</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.ignore_cert">
+<span class="sig-name descname"><span class="pre">ignore_cert</span></span><a class="headerlink" href="#polls.models.Virtuals.ignore_cert" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.BooleanField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BooleanField</span></code></a></p>
+<p>Ignore cert</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.monitoring_set">
+<span class="sig-name descname"><span class="pre">monitoring_set</span></span><a class="headerlink" href="#polls.models.Virtuals.monitoring_set" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: Reverse <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> from <a class="reference internal" href="#polls.models.Monitoring" title="polls.models.Monitoring"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitoring</span></code></a></p>
+<p>All monitorings of this virtuals (related name of <a class="reference internal" href="#polls.models.Monitoring.virtual_machines" title="polls.models.Monitoring.virtual_machines"><code class="xref py py-attr docutils literal notranslate"><span class="pre">virtual_machines</span></code></a>)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#polls.models.Virtuals.objects" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.password_vm">
+<span class="sig-name descname"><span class="pre">password_vm</span></span><a class="headerlink" href="#polls.models.Virtuals.password_vm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Password vm</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.port">
+<span class="sig-name descname"><span class="pre">port</span></span><a class="headerlink" href="#polls.models.Virtuals.port" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.IntegerField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegerField</span></code></a></p>
+<p>Port</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.protocol">
+<span class="sig-name descname"><span class="pre">protocol</span></span><a class="headerlink" href="#polls.models.Virtuals.protocol" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>Protocol</p>
+<p>Choices:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rdp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ssh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vnc</span></code></p></li>
+</ul>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><a class="headerlink" href="#polls.models.Virtuals.user_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.ForeignKey" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ForeignKey</span></code></a> to <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/contrib/auth/#django.contrib.auth.models.User" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></a></p>
+<p>User id (related name: <code class="xref py py-attr docutils literal notranslate"><span class="pre">virtuals</span></code>)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.user_id_id">
+<span class="sig-name descname"><span class="pre">user_id_id</span></span><a class="headerlink" href="#polls.models.Virtuals.user_id_id" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Internal field, use <a class="reference internal" href="#polls.models.Virtuals.user_id" title="polls.models.Virtuals.user_id"><code class="xref py py-class docutils literal notranslate"><span class="pre">user_id</span></code></a> instead.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="polls.models.Virtuals.user_vm">
+<span class="sig-name descname"><span class="pre">user_vm</span></span><a class="headerlink" href="#polls.models.Virtuals.user_vm" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Type: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/models/fields/#django.db.models.CharField" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CharField</span></code></a></p>
+<p>User vm</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-polls.views">
+<dt class="sig sig-object py" id="polls.views.MonitoringDetailView">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">MonitoringDetailView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringDetailView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/class-based-views/base/#django.views.generic.base.View" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringDetailView.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringDetailView.delete" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringDetailView.dispatch">
+<span class="sig-name descname"><span class="pre">dispatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringDetailView.dispatch" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringDetailView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringDetailView.get" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.views.MonitoringListView">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">MonitoringListView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringListView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/class-based-views/base/#django.views.generic.base.View" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringListView.dispatch">
+<span class="sig-name descname"><span class="pre">dispatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringListView.dispatch" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringListView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringListView.get" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.MonitoringListView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.MonitoringListView.post" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.views.VirtualsDetailView">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">VirtualsDetailView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsDetailView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/class-based-views/base/#django.views.generic.base.View" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsDetailView.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vm_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsDetailView.delete" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsDetailView.dispatch">
+<span class="sig-name descname"><span class="pre">dispatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsDetailView.dispatch" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsDetailView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vm_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsDetailView.get" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="polls.views.VirtualsListView">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">VirtualsListView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsListView" title="Ссылка на это определение">¶</a></dt>
+<dd><p>Базовые классы: <a class="reference external" href="https://docs.djangoproject.com/en/stable/ref/class-based-views/base/#django.views.generic.base.View" title="(в Django v5.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsListView.dispatch">
+<span class="sig-name descname"><span class="pre">dispatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsListView.dispatch" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsListView.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsListView.get" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="polls.views.VirtualsListView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.VirtualsListView.post" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="polls.views.index">
+<span class="sig-prename descclassname"><span class="pre">polls.views.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#polls.views.index" title="Ссылка на это определение">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">djangotutor</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">djangotutor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Choice"><code class="docutils literal notranslate"><span class="pre">Choice</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Monitoring"><code class="docutils literal notranslate"><span class="pre">Monitoring</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Product"><code class="docutils literal notranslate"><span class="pre">Product</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Protocol"><code class="docutils literal notranslate"><span class="pre">Protocol</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Question"><code class="docutils literal notranslate"><span class="pre">Question</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.models.Virtuals"><code class="docutils literal notranslate"><span class="pre">Virtuals</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.views.MonitoringDetailView"><code class="docutils literal notranslate"><span class="pre">MonitoringDetailView</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.views.MonitoringListView"><code class="docutils literal notranslate"><span class="pre">MonitoringListView</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.views.VirtualsDetailView"><code class="docutils literal notranslate"><span class="pre">VirtualsDetailView</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.views.VirtualsListView"><code class="docutils literal notranslate"><span class="pre">VirtualsListView</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polls.views.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="предыдущая глава">djangotutor documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Arsen Sardaryan.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/djangotutor.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
