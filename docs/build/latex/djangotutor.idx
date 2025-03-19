@@ -1,0 +1,85 @@
+\indexentry{module@\spxentry{module}!polls.models@\spxentry{polls.models}|hyperpage}{3}
+\indexentry{polls.models@\spxentry{polls.models}!module@\spxentry{module}|hyperpage}{3}
+\indexentry{Choice (класс в polls.models)@\spxentry{Choice}\spxextra{класс в polls.models}|hyperpage}{3}
+\indexentry{Choice.DoesNotExist@\spxentry{Choice.DoesNotExist}|hyperpage}{3}
+\indexentry{Choice.MultipleObjectsReturned@\spxentry{Choice.MultipleObjectsReturned}|hyperpage}{3}
+\indexentry{\_meta (атрибут polls.models.Choice)@\spxentry{\_meta}\spxextra{атрибут polls.models.Choice}|hyperpage}{3}
+\indexentry{choice\_text (атрибут polls.models.Choice)@\spxentry{choice\_text}\spxextra{атрибут polls.models.Choice}|hyperpage}{3}
+\indexentry{id (атрибут polls.models.Choice)@\spxentry{id}\spxextra{атрибут polls.models.Choice}|hyperpage}{3}
+\indexentry{objects (атрибут polls.models.Choice)@\spxentry{objects}\spxextra{атрибут polls.models.Choice}|hyperpage}{3}
+\indexentry{question (атрибут polls.models.Choice)@\spxentry{question}\spxextra{атрибут polls.models.Choice}|hyperpage}{3}
+\indexentry{question\_id (атрибут polls.models.Choice)@\spxentry{question\_id}\spxextra{атрибут polls.models.Choice}|hyperpage}{4}
+\indexentry{votes (атрибут polls.models.Choice)@\spxentry{votes}\spxextra{атрибут polls.models.Choice}|hyperpage}{4}
+\indexentry{Monitoring (класс в polls.models)@\spxentry{Monitoring}\spxextra{класс в polls.models}|hyperpage}{4}
+\indexentry{Monitoring.DoesNotExist@\spxentry{Monitoring.DoesNotExist}|hyperpage}{4}
+\indexentry{Monitoring.MultipleObjectsReturned@\spxentry{Monitoring.MultipleObjectsReturned}|hyperpage}{4}
+\indexentry{\_meta (атрибут polls.models.Monitoring)@\spxentry{\_meta}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{4}
+\indexentry{cpu\_usage (атрибут polls.models.Monitoring)@\spxentry{cpu\_usage}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{4}
+\indexentry{get\_next\_by\_monitoring\_time() (метод polls.models.Monitoring)@\spxentry{get\_next\_by\_monitoring\_time()}\spxextra{метод polls.models.Monitoring}|hyperpage}{4}
+\indexentry{get\_previous\_by\_monitoring\_time() (метод polls.models.Monitoring)@\spxentry{get\_previous\_by\_monitoring\_time()}\spxextra{метод polls.models.Monitoring}|hyperpage}{4}
+\indexentry{memory\_usage (атрибут polls.models.Monitoring)@\spxentry{memory\_usage}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{4}
+\indexentry{monitoring\_id (атрибут polls.models.Monitoring)@\spxentry{monitoring\_id}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{4}
+\indexentry{monitoring\_time (атрибут polls.models.Monitoring)@\spxentry{monitoring\_time}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{5}
+\indexentry{network\_traffic (атрибут polls.models.Monitoring)@\spxentry{network\_traffic}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{5}
+\indexentry{objects (атрибут polls.models.Monitoring)@\spxentry{objects}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{5}
+\indexentry{virtual\_machines (атрибут polls.models.Monitoring)@\spxentry{virtual\_machines}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{5}
+\indexentry{virtual\_machines\_id (атрибут polls.models.Monitoring)@\spxentry{virtual\_machines\_id}\spxextra{атрибут polls.models.Monitoring}|hyperpage}{5}
+\indexentry{Product (класс в polls.models)@\spxentry{Product}\spxextra{класс в polls.models}|hyperpage}{5}
+\indexentry{Product.DoesNotExist@\spxentry{Product.DoesNotExist}|hyperpage}{5}
+\indexentry{Product.MultipleObjectsReturned@\spxentry{Product.MultipleObjectsReturned}|hyperpage}{5}
+\indexentry{\_\_init\_\_() (метод polls.models.Product)@\spxentry{\_\_init\_\_()}\spxextra{метод polls.models.Product}|hyperpage}{5}
+\indexentry{\_meta (атрибут polls.models.Product)@\spxentry{\_meta}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{id (атрибут polls.models.Product)@\spxentry{id}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{name (атрибут polls.models.Product)@\spxentry{name}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{objects (атрибут polls.models.Product)@\spxentry{objects}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{price (атрибут polls.models.Product)@\spxentry{price}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{qux (атрибут polls.models.Product)@\spxentry{qux}\spxextra{атрибут polls.models.Product}|hyperpage}{5}
+\indexentry{spam (атрибут polls.models.Product)@\spxentry{spam}\spxextra{атрибут polls.models.Product}|hyperpage}{6}
+\indexentry{Protocol (класс в polls.models)@\spxentry{Protocol}\spxextra{класс в polls.models}|hyperpage}{6}
+\indexentry{RDP (атрибут polls.models.Protocol)@\spxentry{RDP}\spxextra{атрибут polls.models.Protocol}|hyperpage}{6}
+\indexentry{SSH (атрибут polls.models.Protocol)@\spxentry{SSH}\spxextra{атрибут polls.models.Protocol}|hyperpage}{6}
+\indexentry{VNC (атрибут polls.models.Protocol)@\spxentry{VNC}\spxextra{атрибут polls.models.Protocol}|hyperpage}{6}
+\indexentry{\_generate\_next\_value\_() (статический метод polls.models.Protocol)@\spxentry{\_generate\_next\_value\_()}\spxextra{статический метод polls.models.Protocol}|hyperpage}{6}
+\indexentry{Question (класс в polls.models)@\spxentry{Question}\spxextra{класс в polls.models}|hyperpage}{6}
+\indexentry{Question.DoesNotExist@\spxentry{Question.DoesNotExist}|hyperpage}{6}
+\indexentry{Question.MultipleObjectsReturned@\spxentry{Question.MultipleObjectsReturned}|hyperpage}{6}
+\indexentry{\_meta (атрибут polls.models.Question)@\spxentry{\_meta}\spxextra{атрибут polls.models.Question}|hyperpage}{6}
+\indexentry{choice\_set (атрибут polls.models.Question)@\spxentry{choice\_set}\spxextra{атрибут polls.models.Question}|hyperpage}{6}
+\indexentry{get\_next\_by\_pub\_date() (метод polls.models.Question)@\spxentry{get\_next\_by\_pub\_date()}\spxextra{метод polls.models.Question}|hyperpage}{6}
+\indexentry{get\_previous\_by\_pub\_date() (метод polls.models.Question)@\spxentry{get\_previous\_by\_pub\_date()}\spxextra{метод polls.models.Question}|hyperpage}{6}
+\indexentry{id (атрибут polls.models.Question)@\spxentry{id}\spxextra{атрибут polls.models.Question}|hyperpage}{6}
+\indexentry{objects (атрибут polls.models.Question)@\spxentry{objects}\spxextra{атрибут polls.models.Question}|hyperpage}{7}
+\indexentry{pub\_date (атрибут polls.models.Question)@\spxentry{pub\_date}\spxextra{атрибут polls.models.Question}|hyperpage}{7}
+\indexentry{question\_text (атрибут polls.models.Question)@\spxentry{question\_text}\spxextra{атрибут polls.models.Question}|hyperpage}{7}
+\indexentry{was\_published\_recently() (метод polls.models.Question)@\spxentry{was\_published\_recently()}\spxextra{метод polls.models.Question}|hyperpage}{7}
+\indexentry{Virtuals (класс в polls.models)@\spxentry{Virtuals}\spxextra{класс в polls.models}|hyperpage}{7}
+\indexentry{Virtuals.DoesNotExist@\spxentry{Virtuals.DoesNotExist}|hyperpage}{7}
+\indexentry{Virtuals.MultipleObjectsReturned@\spxentry{Virtuals.MultipleObjectsReturned}|hyperpage}{7}
+\indexentry{\_meta (атрибут polls.models.Virtuals)@\spxentry{\_meta}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{7}
+\indexentry{address (атрибут polls.models.Virtuals)@\spxentry{address}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{7}
+\indexentry{get\_protocol\_display() (метод polls.models.Virtuals)@\spxentry{get\_protocol\_display()}\spxextra{метод polls.models.Virtuals}|hyperpage}{7}
+\indexentry{hostname (атрибут polls.models.Virtuals)@\spxentry{hostname}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{id (атрибут polls.models.Virtuals)@\spxentry{id}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{ignore\_cert (атрибут polls.models.Virtuals)@\spxentry{ignore\_cert}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{monitoring\_set (атрибут polls.models.Virtuals)@\spxentry{monitoring\_set}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{objects (атрибут polls.models.Virtuals)@\spxentry{objects}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{password\_vm (атрибут polls.models.Virtuals)@\spxentry{password\_vm}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{port (атрибут polls.models.Virtuals)@\spxentry{port}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{protocol (атрибут polls.models.Virtuals)@\spxentry{protocol}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{user\_id (атрибут polls.models.Virtuals)@\spxentry{user\_id}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{user\_id\_id (атрибут polls.models.Virtuals)@\spxentry{user\_id\_id}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{user\_vm (атрибут polls.models.Virtuals)@\spxentry{user\_vm}\spxextra{атрибут polls.models.Virtuals}|hyperpage}{8}
+\indexentry{module@\spxentry{module}!polls.views@\spxentry{polls.views}|hyperpage}{8}
+\indexentry{polls.views@\spxentry{polls.views}!module@\spxentry{module}|hyperpage}{8}
+\indexentry{MonitoringDetailView (класс в polls.views)@\spxentry{MonitoringDetailView}\spxextra{класс в polls.views}|hyperpage}{8}
+\indexentry{delete() (метод polls.views.MonitoringDetailView)@\spxentry{delete()}\spxextra{метод polls.views.MonitoringDetailView}|hyperpage}{8}
+\indexentry{get() (метод polls.views.MonitoringDetailView)@\spxentry{get()}\spxextra{метод polls.views.MonitoringDetailView}|hyperpage}{9}
+\indexentry{MonitoringListView (класс в polls.views)@\spxentry{MonitoringListView}\spxextra{класс в polls.views}|hyperpage}{9}
+\indexentry{get() (метод polls.views.MonitoringListView)@\spxentry{get()}\spxextra{метод polls.views.MonitoringListView}|hyperpage}{9}
+\indexentry{post() (метод polls.views.MonitoringListView)@\spxentry{post()}\spxextra{метод polls.views.MonitoringListView}|hyperpage}{9}
+\indexentry{VirtualsDetailView (класс в polls.views)@\spxentry{VirtualsDetailView}\spxextra{класс в polls.views}|hyperpage}{9}
+\indexentry{delete() (метод polls.views.VirtualsDetailView)@\spxentry{delete()}\spxextra{метод polls.views.VirtualsDetailView}|hyperpage}{9}
+\indexentry{get() (метод polls.views.VirtualsDetailView)@\spxentry{get()}\spxextra{метод polls.views.VirtualsDetailView}|hyperpage}{9}
+\indexentry{VirtualsListView (класс в polls.views)@\spxentry{VirtualsListView}\spxextra{класс в polls.views}|hyperpage}{9}
+\indexentry{get() (метод polls.views.VirtualsListView)@\spxentry{get()}\spxextra{метод polls.views.VirtualsListView}|hyperpage}{9}
+\indexentry{post() (метод polls.views.VirtualsListView)@\spxentry{post()}\spxextra{метод polls.views.VirtualsListView}|hyperpage}{9}

@@ -1,0 +1,154 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter {\sphinxsymbolsname}
+  \item \spxentry{\_\_init\_\_()}\spxextra{метод polls.models.Product}, \hyperpage{5}
+  \item \spxentry{\_generate\_next\_value\_()}\spxextra{статический метод polls.models.Protocol}, 
+		\hyperpage{6}
+  \item \spxentry{\_meta}\spxextra{атрибут polls.models.Choice}, \hyperpage{3}
+  \item \spxentry{\_meta}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{4}
+  \item \spxentry{\_meta}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+  \item \spxentry{\_meta}\spxextra{атрибут polls.models.Question}, \hyperpage{6}
+  \item \spxentry{\_meta}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{7}
+
+  \indexspace
+  \bigletter A
+  \item \spxentry{address}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{7}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{Choice}\spxextra{класс в polls.models}, \hyperpage{3}
+  \item \spxentry{Choice.DoesNotExist}, \hyperpage{3}
+  \item \spxentry{Choice.MultipleObjectsReturned}, \hyperpage{3}
+  \item \spxentry{choice\_set}\spxextra{атрибут polls.models.Question}, \hyperpage{6}
+  \item \spxentry{choice\_text}\spxextra{атрибут polls.models.Choice}, \hyperpage{3}
+  \item \spxentry{cpu\_usage}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{4}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{delete()}\spxextra{метод polls.views.MonitoringDetailView}, \hyperpage{8}
+  \item \spxentry{delete()}\spxextra{метод polls.views.VirtualsDetailView}, \hyperpage{9}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get()}\spxextra{метод polls.views.MonitoringDetailView}, \hyperpage{9}
+  \item \spxentry{get()}\spxextra{метод polls.views.MonitoringListView}, \hyperpage{9}
+  \item \spxentry{get()}\spxextra{метод polls.views.VirtualsDetailView}, \hyperpage{9}
+  \item \spxentry{get()}\spxextra{метод polls.views.VirtualsListView}, \hyperpage{9}
+  \item \spxentry{get\_next\_by\_monitoring\_time()}\spxextra{метод polls.models.Monitoring}, 
+		\hyperpage{4}
+  \item \spxentry{get\_next\_by\_pub\_date()}\spxextra{метод polls.models.Question}, 
+		\hyperpage{6}
+  \item \spxentry{get\_previous\_by\_monitoring\_time()}\spxextra{метод polls.models.Monitoring}, 
+		\hyperpage{4}
+  \item \spxentry{get\_previous\_by\_pub\_date()}\spxextra{метод polls.models.Question}, 
+		\hyperpage{6}
+  \item \spxentry{get\_protocol\_display()}\spxextra{метод polls.models.Virtuals}, 
+		\hyperpage{7}
+
+  \indexspace
+  \bigletter H
+  \item \spxentry{hostname}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{id}\spxextra{атрибут polls.models.Choice}, \hyperpage{3}
+  \item \spxentry{id}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+  \item \spxentry{id}\spxextra{атрибут polls.models.Question}, \hyperpage{6}
+  \item \spxentry{id}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{ignore\_cert}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{memory\_usage}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{4}
+  \item \spxentry{module}
+    \subitem \spxentry{polls.models}, \hyperpage{3}
+    \subitem \spxentry{polls.views}, \hyperpage{8}
+  \item \spxentry{Monitoring}\spxextra{класс в polls.models}, \hyperpage{4}
+  \item \spxentry{Monitoring.DoesNotExist}, \hyperpage{4}
+  \item \spxentry{Monitoring.MultipleObjectsReturned}, \hyperpage{4}
+  \item \spxentry{monitoring\_id}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{4}
+  \item \spxentry{monitoring\_set}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{monitoring\_time}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{5}
+  \item \spxentry{MonitoringDetailView}\spxextra{класс в polls.views}, \hyperpage{8}
+  \item \spxentry{MonitoringListView}\spxextra{класс в polls.views}, \hyperpage{9}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{name}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+  \item \spxentry{network\_traffic}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{5}
+
+  \indexspace
+  \bigletter O
+  \item \spxentry{objects}\spxextra{атрибут polls.models.Choice}, \hyperpage{3}
+  \item \spxentry{objects}\spxextra{атрибут polls.models.Monitoring}, \hyperpage{5}
+  \item \spxentry{objects}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+  \item \spxentry{objects}\spxextra{атрибут polls.models.Question}, \hyperpage{7}
+  \item \spxentry{objects}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{password\_vm}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{polls.models}
+    \subitem \spxentry{module}, \hyperpage{3}
+  \item \spxentry{polls.views}
+    \subitem \spxentry{module}, \hyperpage{8}
+  \item \spxentry{port}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{post()}\spxextra{метод polls.views.MonitoringListView}, \hyperpage{9}
+  \item \spxentry{post()}\spxextra{метод polls.views.VirtualsListView}, \hyperpage{9}
+  \item \spxentry{price}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+  \item \spxentry{Product}\spxextra{класс в polls.models}, \hyperpage{5}
+  \item \spxentry{Product.DoesNotExist}, \hyperpage{5}
+  \item \spxentry{Product.MultipleObjectsReturned}, \hyperpage{5}
+  \item \spxentry{protocol}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{Protocol}\spxextra{класс в polls.models}, \hyperpage{6}
+  \item \spxentry{pub\_date}\spxextra{атрибут polls.models.Question}, \hyperpage{7}
+
+  \indexspace
+  \bigletter Q
+  \item \spxentry{question}\spxextra{атрибут polls.models.Choice}, \hyperpage{3}
+  \item \spxentry{Question}\spxextra{класс в polls.models}, \hyperpage{6}
+  \item \spxentry{Question.DoesNotExist}, \hyperpage{6}
+  \item \spxentry{Question.MultipleObjectsReturned}, \hyperpage{6}
+  \item \spxentry{question\_id}\spxextra{атрибут polls.models.Choice}, \hyperpage{4}
+  \item \spxentry{question\_text}\spxextra{атрибут polls.models.Question}, \hyperpage{7}
+  \item \spxentry{qux}\spxextra{атрибут polls.models.Product}, \hyperpage{5}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{RDP}\spxextra{атрибут polls.models.Protocol}, \hyperpage{6}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{spam}\spxextra{атрибут polls.models.Product}, \hyperpage{6}
+  \item \spxentry{SSH}\spxextra{атрибут polls.models.Protocol}, \hyperpage{6}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{user\_id}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{user\_id\_id}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+  \item \spxentry{user\_vm}\spxextra{атрибут polls.models.Virtuals}, \hyperpage{8}
+
+  \indexspace
+  \bigletter V
+  \item \spxentry{virtual\_machines}\spxextra{атрибут polls.models.Monitoring}, 
+		\hyperpage{5}
+  \item \spxentry{virtual\_machines\_id}\spxextra{атрибут polls.models.Monitoring}, 
+		\hyperpage{5}
+  \item \spxentry{Virtuals}\spxextra{класс в polls.models}, \hyperpage{7}
+  \item \spxentry{Virtuals.DoesNotExist}, \hyperpage{7}
+  \item \spxentry{Virtuals.MultipleObjectsReturned}, \hyperpage{7}
+  \item \spxentry{VirtualsDetailView}\spxextra{класс в polls.views}, \hyperpage{9}
+  \item \spxentry{VirtualsListView}\spxextra{класс в polls.views}, \hyperpage{9}
+  \item \spxentry{VNC}\spxextra{атрибут polls.models.Protocol}, \hyperpage{6}
+  \item \spxentry{votes}\spxextra{атрибут polls.models.Choice}, \hyperpage{4}
+
+  \indexspace
+  \bigletter W
+  \item \spxentry{was\_published\_recently()}\spxextra{метод polls.models.Question}, 
+		\hyperpage{7}
+
+\end{sphinxtheindex}
