@@ -1,0 +1,6 @@
+   site_name: Budget Planner
+   nav:
+     - Home: index.md
+     - Models: models.md
+     - Views: views.md
+   
