@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Models - Budget Planner</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Budget Planner</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Models</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../views/" class="nav-link">Views</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../views/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#models-documentation" class="nav-link">Models Documentation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#protocol-enum" class="nav-link">Protocol (Enum)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#question-model" class="nav-link">Question Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#choice-model" class="nav-link">Choice Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#virtuals-model" class="nav-link">Virtuals Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#monitoring-model" class="nav-link">Monitoring Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#product-model" class="nav-link">Product Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="models-documentation">Models Documentation</h1>
+<h2 id="protocol-enum">Protocol (Enum)</h2>
+<p>Represents the different types of protocols available for virtual machines.  </p>
+<ul>
+<li>
+<p><strong>RDP</strong>: Remote Desktop Protocol  </p>
+</li>
+<li>
+<p><strong>SSH</strong>: Secure Shell  </p>
+</li>
+<li>
+<p><strong>VNC</strong>: Virtual Network Computing  </p>
+</li>
+</ul>
+<h2 id="question-model">Question Model</h2>
+<p>Represents a question in a polling application.  </p>
+<p><strong>Fields:</strong>  </p>
+<ul>
+<li>
+<p><code>question_text</code> (CharField): The text of the question.  </p>
+</li>
+<li>
+<p><code>pub_date</code> (DateTimeField): The date when the question was published.  </p>
+</li>
+</ul>
+<p><strong>Methods:</strong>  </p>
+<ul>
+<li><code>was_published_recently()</code>: Checks if the question was published within the last day.  </li>
+</ul>
+<h2 id="choice-model">Choice Model</h2>
+<p>Represents a possible answer to a <code>Question</code>.  </p>
+<p><strong>Fields:</strong>  </p>
+<ul>
+<li>
+<p><code>question</code> (ForeignKey to <code>Question</code>): The related question.  </p>
+</li>
+<li>
+<p><code>choice_text</code> (CharField): The text of the choice.  </p>
+</li>
+<li>
+<p><code>votes</code> (IntegerField): The number of votes this choice has received.  </p>
+</li>
+</ul>
+<h2 id="virtuals-model">Virtuals Model</h2>
+<p>Represents a virtual machine configuration.  </p>
+<p><strong>Fields:</strong>  </p>
+<ul>
+<li>
+<p><code>id</code> (UUIDField): Primary key.  </p>
+</li>
+<li>
+<p><code>hostname</code> (CharField): The hostname of the VM.  </p>
+</li>
+<li>
+<p><code>protocol</code> (CharField): The protocol used for remote connection.  </p>
+</li>
+<li>
+<p><code>user_id</code> (ForeignKey to <code>User</code>): The owner of the VM.  </p>
+</li>
+<li>
+<p><code>address</code> (CharField): The IP address or domain.  </p>
+</li>
+<li>
+<p><code>port</code> (IntegerField): Port for connection.  </p>
+</li>
+<li>
+<p><code>user_vm</code> (CharField): Username for VM access.  </p>
+</li>
+<li>
+<p><code>password_vm</code> (CharField): Password for VM access.  </p>
+</li>
+<li>
+<p><code>ignore_cert</code> (BooleanField): Whether to ignore SSL certificates.  </p>
+</li>
+</ul>
+<h2 id="monitoring-model">Monitoring Model</h2>
+<p>Tracks system usage for virtual machines.  </p>
+<p><strong>Fields:</strong>  </p>
+<ul>
+<li>
+<p><code>monitoring_id</code> (UUIDField): Primary key.  </p>
+</li>
+<li>
+<p><code>cpu_usage</code> (FloatField): CPU usage percentage.  </p>
+</li>
+<li>
+<p><code>memory_usage</code> (FloatField): Memory usage percentage.  </p>
+</li>
+<li>
+<p><code>network_traffic</code> (TimeField): Network traffic.  </p>
+</li>
+<li>
+<p><code>monitoring_time</code> (DateTimeField): Timestamp of monitoring data.  </p>
+</li>
+<li>
+<p><code>virtual_machines</code> (ForeignKey to <code>Virtuals</code>): Related virtual machine.  </p>
+</li>
+</ul>
+<h2 id="product-model">Product Model</h2>
+<p>Represents a product with a name and price.  </p>
+<p><strong>Fields:</strong>  </p>
+<ul>
+<li>
+<p><code>name</code> (CharField): Name of the product.  </p>
+</li>
+<li>
+<p><code>price</code> (DecimalField): Price of the product.  </p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
